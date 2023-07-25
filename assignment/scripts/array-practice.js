@@ -69,9 +69,9 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.b. TODO: Create a variable `entree` and assign it to a new food.
 //      Add the `entree` at the beginning of the array & log the array
-let entree='Burgers';
+let entree = 'Burgers';
 favoriteFoods.unshift(entree);
-console.log('added a great ')
+console.log('added a great meal to the start,', (favoriteFoods));
 
 // Example: Remove the last animal by using Array.pop
 let removedAnimal = animalArray.pop();
@@ -84,7 +84,9 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 // 4.c. TODO: Create a variable `lastColor`. Remove the color 
 //      at the end of your array & assign it to `lastColor`.
 //      Console log both the color removed and the updated array.
-
+let lastColor = colors.pop();
+console.log('Removed the last color,', lastColor);
+console.log('The colors are now: ', colors);
 
 // Example: Remove the first color using Array.shift
 removedAnimal = animalArray.shift();
@@ -94,7 +96,9 @@ console.log('The animals are now', animalArray);
 // 4.d. TODO: Create a variable `firstColor`. Remove the color 
 //      at the beginning of your array & assign it to `firstColor`.
 //      Console log both the color removed and the updated array.
-
+let firstColor = colors.shift();
+console.log('Removed the first color', firstColor);
+console.log('The colors are now,', colors);
 
 // STRETCH GOALS:
 
@@ -103,6 +107,8 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'
 //      Console log the updated array.
 
+gems[1] = 'Tourmaline';
+console.log('Updated Gem Array', gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array
 //     in reverse alphabetical order.
